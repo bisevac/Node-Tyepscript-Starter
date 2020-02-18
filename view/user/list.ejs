@@ -1,0 +1,21 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <body>
+        <table style="width:100%">
+            <tr>
+              <th>id</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+            </tr>
+            <% for(var i = 0; i < users.length; i++) { %>
+              </tr>
+                  <td><%= users[i].id %></td>
+                  <td><%= users[i].name %></td>
+                  <td><%= users[i].surname %></td>
+                  <td><%= users[i].age %></td>
+              </tr>
+            <% } %>
+          </table>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "name": "typescript-base-backend",
+  "version": "1.0.0",
+  "description": "Typescript base web/mobil project NODEJS",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc --project tsconfig.json",
+    "build": "rm -rf dist/ && tsc --project tsconfig.json",
+    "check": "npm audit",
+    "migratedbv": "node ./migration/migrate.js -url 'YOUR_DB_URI' dbv",
+    "migrate": "node ./migration/migrate.js -url 'YOUR_DB_URI' migrate"
+  },
+  "author": "Murat Deniz",
+  "license": "ISC",
+  "dependencies": {
+    "@tsed/common": "^5.41.2",
+    "@tsed/core": "^5.41.2",
+    "@tsed/passport": "^5.42.1",
+    "@types/bcrypt": "^3.0.0",
+    "@types/bluebird": "^3.5.29",
+    "@types/express": "^4.17.2",
+    "@types/jsonwebtoken": "^8.3.7",
+    "@types/mysql": "^2.15.8",
+    "bcrypt": "^3.0.8",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "consolidate": "^0.15.1",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.21.2",
+    "js-yaml": "^3.13.1",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.1.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^8.6.2",
+    "tslint": "^5.12.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.7.5"
+  }
+}

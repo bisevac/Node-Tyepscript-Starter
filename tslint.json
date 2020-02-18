@@ -1,0 +1,49 @@
+{
+    "lintOptions": {
+      "typeCheck": true
+    },
+    "extends": [
+      "tslint:recommended",
+      "tslint-config-airbnb"
+    ],
+    "linterOptions": {
+      "exclude": [
+          "node_modules/**"
+      ]
+    },
+    "rules": {
+      "max-line-length": {
+        "options": [
+          200
+        ]
+      },
+      "member-access":false,
+      "space-before-function-paren": true,
+      "import-spacing": false,
+      "no-boolean-literal-compare": true,
+      "space-in-parens": [true, "always"],
+      "object-literal-sort-keys":false,
+      "max-classes-per-file":false,
+      "prefer-array-literal":false,
+      "key-spacing": ["error", {"beforeColon": true, "afterColon": true, "align": "colon"}],
+      "no-string-literal":false,
+      "typedef-whitespace": [
+        true,
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        },
+        {
+          "call-signature": "onespace",
+          "index-signature": "onespace",
+          "parameter": "onespace",
+          "property-declaration": "onespace",
+          "variable-declaration": "onespace"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,29 @@
+###Node template
+.DS_Store
+
+#Node Modules
+node_modules
+package-lock.json
+
+#Build
+dist
+
+#Logs
+logs
+*.log
+npm-debug.log*
+
+#Runtime data
+pids
+*.pid
+*.seed
+
+#IDE
+.vscode
+.idea
+
+#Bucket
+public/bucket/**/*
+
+#Log
+logs/*
